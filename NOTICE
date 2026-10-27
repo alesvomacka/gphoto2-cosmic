@@ -1,0 +1,11 @@
+Camera Import Applet for COSMIC
+
+The panel button, popup lifecycle, and application skeleton are adapted from:
+https://github.com/pop-os/cosmic-applet-template
+Template commit: 58f506fd800724fd64e1056f36a745800a1a6d52
+
+Current API patterns were checked against libcosmic commit:
+95236a944bfd51c63a2fc65fe50a592c47168d40
+https://github.com/pop-os/libcosmic
+
+Source files in this project are licensed under MPL-2.0.

@@ -1,0 +1,4 @@
+/target/
+/dist/
+/.flatpak-builder/
+__pycache__/

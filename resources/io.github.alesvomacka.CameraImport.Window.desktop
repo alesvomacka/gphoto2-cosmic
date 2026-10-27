@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Camera Import Applet for COSMIC
+Comment=Import photos from a USB camera
+Type=Application
+Icon=io.github.alesvomacka.CameraImport
+Exec=camera-import-applet --window
+Terminal=false
+Categories=Graphics;Photography;

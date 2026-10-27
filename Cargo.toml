@@ -1,0 +1,17 @@
+[package]
+name = "camera-import-applet"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.93"
+license = "MPL-2.0"
+description = "A native camera import applet for COSMIC, powered by gphoto2"
+
+[dependencies]
+# Cargo.lock pins the git commit; use --locked for reproducible builds.
+libcosmic = { git = "https://github.com/pop-os/libcosmic", default-features = false, features = ["applet", "applet-token", "dbus-config", "tokio", "wayland", "winit", "xdg-portal"] }
+tokio = { version = "1", features = ["rt", "time"] }
+rustix = { version = "1", features = ["fs"] }
+
+[[example]]
+name = "backend-driver"
+path = "tests/support/backend_driver.rs"
