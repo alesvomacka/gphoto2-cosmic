@@ -124,7 +124,7 @@
         {
           "type": "archive",
           "path": "../dist/camera-import-applet-0.1.0.tar.gz",
-          "sha256": "f8edc1a721c2b4b73fb79b4cc34f6c24b811c22e9aa6b715bf7239162c961cf6"
+          "sha256": "933d266c111b4ee2bf99c75b19881126215909fef99d42345842dd9ed074b7ff"
         }
       ]
     }

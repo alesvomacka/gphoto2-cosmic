@@ -33,3 +33,4 @@ flatpak: flatpak-source
 	$(FLATPAK_BUILDER) --user --force-clean --repo=dist/flatpak-repo --install-deps-from=flathub target/flatpak packaging/io.github.alesvomacka.CameraImport.json
 flatpak-bundle: flatpak
 	flatpak build-bundle --runtime-repo=https://dl.flathub.org/repo/flathub.flatpakrepo dist/flatpak-repo dist/camera-import-applet-$(shell sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml)-$(shell flatpak --default-arch).flatpak io.github.alesvomacka.CameraImport stable
+	python3 scripts/prepare-release-assets.py

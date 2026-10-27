@@ -23,6 +23,8 @@ This creates:
 - `dist/camera-import-applet-0.1.0-<architecture>.flatpak`: installable bundle.
 - `dist/camera-import-applet-0.1.0.tar.gz`: vendored build sources.
 - `dist/flatpak-repo/`: local OSTree repository.
+- `dist/io.github.alesvomacka.CameraImport.json`: release manifest with a public source-archive URL.
+- `dist/SHA256SUMS`: checksums for the three release assets.
 
 The build installs the Freedesktop 26.08 SDK and Rust extension into the builder's
 user Flatpak installation if needed. Those are build dependencies; users installing
@@ -81,11 +83,12 @@ The app ID is `io.github.alesvomacka.CameraImport`, using the owner's GitHub
 namespace. Publication is through personal GitHub Releases; this project is not
 submitted to the COSMIC applet repository.
 
-1. Push the source to your personal repository. Set its URL as the homepage in
-   the AppStream metadata once the repository URL is known.
+1. Push the source to [alesvomacka/gphoto2-cosmic](https://github.com/alesvomacka/gphoto2-cosmic).
+   The package metadata links to this repository and its issue tracker.
 2. Run `make flatpak-bundle`, then create a GitHub release such as `v0.1.0`.
 3. Attach the `.flatpak` bundle, vendored source archive, Flatpak manifest, and
-   `SHA256SUMS` from `dist/`.
+   `SHA256SUMS` from `dist/`. The bundle target generates the release manifest
+   with a versioned GitHub source URL and refreshes all checksums automatically.
 4. Users download and install the bundle with the command above. Repeat that
    command with a newer bundle to update. GitHub release bundles do not provide
    automatic updates; a signed Flatpak remote would be needed for that.

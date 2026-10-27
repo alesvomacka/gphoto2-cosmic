@@ -15,7 +15,7 @@ A small native COSMIC/libcosmic panel applet for copying photos from USB cameras
   of the camera folder option. Both options are off by default.
 ## Install the Flatpak bundle
 
-Download or copy the release bundle for your architecture, then run:
+Download the Flatpak bundle for your architecture from [GitHub Releases](https://github.com/alesvomacka/gphoto2-cosmic/releases), then run:
 
 ```sh
 flatpak install --user ./camera-import-applet-0.1.0-x86_64.flatpak

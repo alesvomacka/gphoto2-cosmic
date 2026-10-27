@@ -3,6 +3,9 @@
   <id>io.github.alesvomacka.CameraImport</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MPL-2.0</project_license>
+  <url type="homepage">https://github.com/alesvomacka/gphoto2-cosmic</url>
+  <url type="vcs-browser">https://github.com/alesvomacka/gphoto2-cosmic</url>
+  <url type="bugtracker">https://github.com/alesvomacka/gphoto2-cosmic/issues</url>
   <developer id="io.github.alesvomacka"><name>Aleš Vomáčka</name></developer>
   <name>Camera Import Applet for COSMIC</name>
   <summary>Import photos from USB cameras in COSMIC</summary>
@@ -24,6 +27,7 @@
   <content_rating type="oars-1.1"/>
   <releases>
     <release version="0.1.0" date="2026-10-27">
+      <url type="details">https://github.com/alesvomacka/gphoto2-cosmic/releases/tag/v0.1.0</url>
       <description><p>Initial release with camera selection, safe imports, export layout options, and detailed progress.</p></description>
     </release>
   </releases>
